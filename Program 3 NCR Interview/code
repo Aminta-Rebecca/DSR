@@ -1,0 +1,16 @@
+v = sample(-50:50, 8, replace=TRUE)
+mat1=matrix(v,nrow=4, ncol=2,byrow=TRUE)
+mat1
+tmat1=t(mat1)  #transpose
+tmat1
+v = sample(-100:100, 4)
+mat2=matrix(v,nrow=2,ncol=2,byrow=TRUE)
+mat2
+eigen(mat2)          #eigen value
+solve(mat2)         #inverse of matrix
+crossprod(mat2)     #cross product
+print("Accessing elements in matrix 1 and 2")
+mat1[1,]
+mat1[4,]
+mat2[,2]
+mat2[,1]
