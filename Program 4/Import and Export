@@ -1,0 +1,18 @@
+list.files()
+getwd()
+setwd("C:/Users/HP/Desktop/lab work/Perfume_Volumes_2_Sample.csv")
+data<-read.delim("Perfume_Volumes_2_Sample.csv",sep=',')
+head(data)
+summary(data)
+colnames(data)
+nrow(data)
+ncol(data)
+numbers=seq(1,100)
+numbers
+new_data=cbind(data,numbers)
+head(new_data)
+colnames(new_data)
+write.table(new_data,"exportData.csv", sep='\t',row.names=FALSE)
+row=c(1,2,3,4)
+new_data=rbind(new_data,row)
+new_data
