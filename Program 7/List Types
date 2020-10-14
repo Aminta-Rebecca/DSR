@@ -1,0 +1,6 @@
+numeric=c(10,20,30)
+str_val=c("Water","lemon","juice")
+realnum=c(23.3,44.5,89.0)
+list1=list(numeric,str_val,realnum)
+names(list1)=c("numeric number","string","real number")
+list1
