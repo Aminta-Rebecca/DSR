@@ -1,0 +1,5 @@
+install.packages("gcookbook")
+library(gcookbook)
+library(ggplot2)
+head(mtcars)
+dotchart(mtcars$mpg, labels = row.names(mtcars), cex = 0.9, xlab = "mpg",main = "Miles Per Gallon of Car") 
